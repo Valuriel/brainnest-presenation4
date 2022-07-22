@@ -16,35 +16,35 @@ endGame.setAttribute('id', 'endGame'); //so we can look up element to remove if 
 
 
 //========FUNCTION DECLARATIONS============
-let computerPlay = () => {  
+const computerPlay = () => {  
     let choices=["rock","paper","scissors"];
     return choices[Math.floor(Math.random() * choices.length)]
 };
 
 //========MAIN GAME LOGICS============
-let playRound = (playerSelection, computerSelection) => {
+const playRound = (playerSelection, computerSelection) => {
     //=====YOU PLAY ROCK==========
-    if (playerSelection.toLowerCase() === 'rock'){
+    if (playerSelection.toLowerCase() === 'rock') {
         if (computerSelection === 'rock'){
             return('Tie!');
         } else if (computerSelection === 'paper'){
-            return('You lost! Paper covers Rock!');
+            return('You Lose! Paper covers Rock!');
         } else if (computerSelection === 'scissors'){
             return('You Win! Rock crushes Scissors!');
         }
     //=====YOU PLAY PAPER==========
-    } else if (playerSelection.toLowerCase() === 'paper'){
+    } else if (playerSelection.toLowerCase() === 'paper') {
         if (computerSelection === 'rock'){
             return('You Win! Paper covers Rock!');
         } else if (computerSelection === 'paper'){
             return('Tie!');
         } else if (computerSelection === 'scissors'){
-            return('You lost! Scissors cuts Paper!');
+            return('You Lose! Scissors cuts Paper!');
         }
     //=====YOU PLAY SCISSORS==========   
-    } else if (playerSelection.toLowerCase() === 'scissors');{
+    } else if (playerSelection.toLowerCase() === 'scissors') {
         if (computerSelection === 'rock'){
-            return('You lost! Rock crushes Scissors!');
+            return('You Lose! Rock crushes Scissors!');
         } else if (computerSelection === 'paper'){
             return('You Win! Scissors cuts Paper!');
         } else if (computerSelection === 'scissors'){
@@ -53,7 +53,7 @@ let playRound = (playerSelection, computerSelection) => {
     }
 }
 
-let endOfGame = (playerSelection, computerSelection) => {
+const endOfGame = (playerScore, computerScore) => {
     if (playerScore > computerScore) {
         endGame.textContent = ('You finished off the computer! Great play!')
     } else if (playerScore < computerScore) {
