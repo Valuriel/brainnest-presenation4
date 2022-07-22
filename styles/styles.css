@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    background: #cf0101;
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+}
+#heading {
+    margin: 120px 30px 60px 30px;
+    text-align: center;
+    font-size: 50px;
+    color: yellow;
+}
+#heading2 {
+    color: blue;
+    margin-bottom: 50px;
+}
+.button-row {
+    display: inline-block;
+}
+.button {
+    padding: 20px;
+    margin: 0 20px 0 20px;
+    font-family: 'Press Start 2P';
+    font-size: 20px;
+    border-radius: 5%;
+    width: 220px;
+    color:#000;
+}
+#rock {
+    background: blue;
+}
+#paper {
+    background: green;
+}
+#scissors {
+    background: orange;
+}
+#rock:hover {
+    background: #000;
+    color: blue
+}
+#paper:hover  {
+    background: #000;
+    color: green;
+}
+#scissors:hover  {
+    background: #000;
+    color: orange;
+}
+
+#container {
+    margin-top: 50px;
+    color: yellow;
+}
+#endGame {
+    margin-top: 20px;
+    font-size: 30px;
+}
+#score {
+    margin-top: 10px;
+    color: blue;
+}
+#result {
+    font-size: 25px;
+}
+footer{
+    color: yellow;
+    margin-top: 3em;
+}
