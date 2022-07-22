@@ -1,4 +1,4 @@
 # brainnest-CSS-assignment
-This is the final assignment for Brainnests thrid training session.
-The Rock, Paper, Scissors game can only be played in your Browser's console!
-A Preview can be found here: https://valuriel.github.io/brainnest-presentation3/
+This is the revisited game assignment for Brainnests training session.
+Play Rock, Paper, Scissors now in your browser!
+A Preview can be found here: https://valuriel.github.io/brainnest-presenation4/
